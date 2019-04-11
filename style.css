@@ -1,0 +1,181 @@
+header {
+  background-image: url("/images/headerBG.png");
+  height:100vh;
+  text-align:center;
+  background-color:#232c33;
+  vertical-align: middle;
+}
+
+header img {
+  position:relative;
+  top:35%;
+}
+
+nav {
+  display:block;
+  background-color:#232C33;
+  text-align:center;
+  line-height:2em;
+  letter-spacing:1px;
+  font-family:cooper black;
+  font-size:24px;
+  color:#DB995A;
+  text-shadow:0px 3px 5px rgba(0, 0, 0, .5);
+}
+
+.projectpreview {
+  text-align:center;
+  background-color:#DBAFC1;
+  margin:0;
+  padding-top:30px;
+  padding-bottom:75px;
+  box-shadow: 0px 5px 5px 2px rgba( 0,0,0,0.1);
+}
+
+.projectpreview img{
+  width:467px;
+}
+
+.casestudy {
+  text-align:center;
+  background-color: #FFF4EA;
+  margin:0;
+  padding-top:30px;
+  padding-bottom:30px;
+  box-shadow: 0px 5px 5px 0px rgba( 0,0,0,0.05);
+}
+
+.casestudymain {
+  padding-left:233px;
+  padding-right:233px;
+  line-height:1.75em;
+}
+
+.casestudymain a {
+  color: #3B4635;
+  font-family:cooper black;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+.casestudy img {
+  height:300px;
+  margin-left: 100px;
+  margin-right:100px;
+  max-width:810px;
+}
+
+header img{
+  width:230px;
+}
+
+.nextproject h1 {
+  text-align:center;
+  font-size:28px;
+}
+
+.about {
+  text-align:center;
+}
+
+.about img {
+  width:200px;
+}
+
+.bio {
+  width:575px;
+  line-height:1.75em;
+  display:inline-block;
+  text-align:left;
+}
+
+.contact {
+  text-align:center;
+  background-color: #DBAFC1;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  background-color:#232c33;
+  font-family:source sans pro;
+  text-transform:uppercase;
+  font-size:12px;
+  letter-spacing:2px;
+  line-height:40px;
+  color:#db995a;
+  text-align:center;
+  vertical-align: middle;
+}
+
+body {
+  background-color:#DB995A;
+  font-family:source sans pro;
+  font-size:16px;
+  color:#232c33;
+}
+
+h1 {
+  font-family: cooper black;
+  letter-spacing:-1px;
+  font-size:48px;
+  margin-bottom:30px;
+}
+
+h2 {
+  font-family: nexa bold;
+  letter-spacing:-1px;
+  font-size:28px;
+}
+
+.projectpreview h1 {
+  color: #232c33;
+}
+
+.projectpreview a:hover{
+  color: #FFF4EA;
+  border:none;
+}
+
+div {
+  margin-bottom:30px;
+  margin-top:30px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+  text-align:center;
+}
+
+nav li {
+  display:inline;
+}
+
+nav li a {
+  display:inline-block;
+  text-align:center;
+  color: #DB995A;
+  padding-left:15px;
+  padding-right:15px;
+  text-decoration:none;
+}
+
+a {
+  line-height:25%;
+}
+
+a:hover {
+  border-bottom:10px solid #E6DFBF;
+}
+
+.contact img {
+  width:35px;
+  padding-left:20px;
+  padding-right:20px;
+}
