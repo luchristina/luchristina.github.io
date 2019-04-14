@@ -172,6 +172,10 @@ nav li a:hover {
   margin-bottom:0;
 }
 
+.personas img {
+  width:100%;
+}
+
 .casestudymain a {
   color: #D9985F;
   font-family:Avenir;
