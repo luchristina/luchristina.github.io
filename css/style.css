@@ -34,9 +34,9 @@ h2 {
 
 header {
   background-color:#232c33;
-  background-image: url("images/bgnew.png");
+  background-image: url("../images/bgnew.png");
   background-repeat: repeat;
-  height:100vh;
+  height:80vh;
   text-align:center;
   vertical-align: middle;
 }
