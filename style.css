@@ -11,7 +11,7 @@ footer {
 }
 
 body {
-  background-color:#DB995A;
+  background-color:#E7C3A3;
   font-family:source sans pro, sans-serif;
   font-size:16px;
   color:#232c33;
@@ -43,7 +43,7 @@ header {
 
 header img {
   position:relative;
-  top:35%;
+  top:30%;
   width:230px;
 }
 
@@ -72,21 +72,9 @@ div {
   padding-top:30px;
 }
 
-button {
-  background-color: #232c33;
-  padding-top:15px;
-  padding-bottom: 15px;
-  padding-left:30px;
-  padding-right:30px;
-  border:none;
-  font-family:avenir;
-  font-size:20px;
-  font-weight:bold;
-  color: #FFD275;
-}
-
 a {
   line-height:25%;
+  text-decoration:none;
 }
 
 a:hover {
@@ -105,7 +93,7 @@ nav li {
   display:inline;
 }
 
-nav li a, button a {
+nav li a{
   display:inline-block;
   text-align:center;
   color: #DB995A;
@@ -140,7 +128,7 @@ nav li a:hover {
 
 #projects {
   text-align:center;
-  background-color:#FFD275;
+  background-color:#D9985F;
   margin:0;
   padding-top:30px;
   padding-bottom:30px;
@@ -159,7 +147,7 @@ nav li a:hover {
 
 .casestudy {
   text-align:center;
-  background-color: #FFD275;
+  background-color: #D9985F;
   margin:0;
   padding-top:30px;
   padding-bottom:30px;
@@ -170,8 +158,6 @@ nav li a:hover {
   padding-left:290px;
   padding-right:290px;
   line-height:1.75em;
-  background-image:url("");
-  background-repeat: repeat;
   margin:auto;
   padding-top:30px;
 }
@@ -181,15 +167,36 @@ nav li a:hover {
   margin-bottom:30px;
 }
 
+.sketches img, .mockups img, .userflow img, .branding img {
+  display:inline;
+  margin-bottom:0;
+}
+
 .casestudymain a {
-  color: #FFD275;
+  color: #D9985F;
   font-family:Avenir;
-  background-color:#232C33;
   padding-left:10px;
   padding-right:10px;
   font-size:18px;
   font-weight:bold;
+}
+
+button {
+  background-color: #232c33;
+  padding-top:15px;
+  padding-bottom: 15px;
+  padding-left:30px;
   text-decoration:none;
+  padding-right:30px;
+  border:none;
+  font-family:avenir;
+  font-size:20px;
+  font-weight:bold;
+  color: #D9985F;
+}
+
+button a {
+  color: #232c33;
 }
 
 .casestudymain a:hover {
@@ -218,7 +225,7 @@ nav li a:hover {
 
 .contact {
   text-align:center;
-  background-color: #FFD275;
+  background-color: #D9985F;
   margin: 0;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -229,4 +236,105 @@ nav li a:hover {
   width:50px;
   padding-left:20px;
   padding-right:20px;
+}
+
+.mobilepreview {
+  display:none;
+}
+
+@media only screen and (max-width:1024px) {
+  /* For tablets */
+  .projects img {
+    max-width:500px;
+    min-width:300px;
+  }
+
+  .casestudy img {
+    width:80%;
+    height:80%;
+    padding:0;
+    margin:0;
+  }
+
+  .casestudymain {
+    padding:0;
+    margin:0;
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+  .bio {
+    width:80%;
+  }
+
+  .webpreview {display:none;}
+  .mobilepreview {display:inline;}
+
+.personas img {
+  width:100%;
+}
+
+.personas img{
+  margin-bottom:0;
+}
+}
+
+@media only screen and (max-width:414px) {
+/* For phones */
+  header {
+    height:65vh;
+  }
+
+  nav li {
+    padding:0;
+    font-size:20px;
+    margin:0;
+  }
+
+  .casestudy h1{
+    padding-top:30px;
+  }
+
+  .projectnav li {
+    font-size:14px;
+  }
+
+  .projects {
+    margin:0;
+    padding:0;
+  }
+
+  .projects img {
+    margin-bottom: 30px;
+  }
+
+  #projects img {
+    padding:0;
+  }
+
+  .casestudy, .casestudymain {
+    margin:0;
+    padding:0;
+  }
+
+  .casestudy {
+    padding-bottom:30px;
+  }
+
+  .casestudymain {
+    padding-right:10px;
+    padding-left:10px;
+  }
+  .analysis img {
+    max-width:100px;
+  }
+
+  .casestudy img{
+    width:80%;
+    height:80%;
+    padding:0;
+    margin:0;
+  }
+  .webpreview {display:none;}
+  .mobilepreview {display:inline;}
 }
