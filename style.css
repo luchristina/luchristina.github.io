@@ -1,0 +1,373 @@
+body {
+  font-family:'Work Sans';
+  line-height:1.75em;
+  font-size:14px;
+  color: #494949;
+}
+
+nav {
+  background-color:#fff;
+  display:grid;
+  grid-template-columns:3fr .75fr .75fr .75fr;
+  padding:25px 100px 25px 100px;
+  position: sticky;
+  top:0;
+}
+
+.container {
+    margin: 0px 100px 0px 100px;
+}
+
+h1 {
+  font-weight:500;
+  font-size:2em;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #E78055;
+}
+
+.iPhoneAnalysis h2, .AnyList h2, .GroceryList h2, .competitiveanalysis h2 {
+  margin-top:50px!important;
+  text-align:center;
+}
+
+.swot {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin-top:50px;
+  margin-bottom:50px;
+  grid-column-gap:100px;
+}
+
+.title {
+  text-align:center;
+  font-weight:500;
+  padding:5px 0px 5px 0px;
+  background-color: #f0f0f0;
+}
+
+#work h1 {
+  text-align:center!important;
+}
+
+#aboutme h1 {
+  margin:0;
+}
+
+.Cauldron h1, .Stork h1, #aboutme h1 {
+  color: #494949;
+}
+
+#work {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top:100px;
+  grid-gap:100px;
+  color:#6C6C6C;
+}
+
+#aboutme img {
+  width:100%;
+  border-left:25px solid #E78055;
+}
+
+.personatypes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:100px;
+}
+
+#aboutme {
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top:150px;
+  grid-gap:100px;
+  color:#6C6C6C;
+}
+
+.ContactLinks {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:50px 25% 50px 25%;
+  text-align:center;
+}
+
+.maingrid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+#contact {
+  margin-top:150px;
+  margin-bottom:150px;
+  text-align:center;
+}
+
+.aboutlink, .worklink, .resumelink {
+  font-size:1.25em;
+  text-align:right;
+}
+
+ .LinkedIn, .Email, .Twitter {
+   font-size:16px;
+ }
+
+.name {
+  font-size:2.5em;
+  font-weight: 500;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.main {
+  margin-top:25px;
+}
+
+.conclusion, .usabilitytesting, .hifi, .maingrid, .research, .userflow, .competitiveanalysis, .personas, .sketches, .stories, .branding {
+  margin-top: 100px;
+}
+
+.iteration1, .iteration2, .iteration3 {
+  margin-top:25px;
+}
+
+.conclusion {
+  margin-bottom:50px;
+}
+
+.marginfix {
+  margin-top:0px;
+}
+
+.conclusionbox {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:100px;
+  padding-right:5px;
+  border-right: 1px solid #f0f0f0;
+}
+
+.testingimages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap:20px;
+}
+
+.testingimages img {
+  border:1px solid #f0f0f0;
+}
+
+.grouping {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  margin-bottom:50px;
+}
+
+.iterations {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  margin:0px 15% 50px 15%;
+}
+
+.iterations img {
+  border:1px solid #f0f0f0;
+}
+
+.caption {
+  text-align:center;
+  color: #E78055;
+}
+
+.main h1 {
+  text-align:center;
+}
+
+a {
+  text-decoration:none;
+  color: #E78055;
+}
+
+a:hover {
+  color: #F6B86E;
+}
+
+.userstories {
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr;
+  grid-column-gap:50px;
+}
+
+.desc {
+  margin:5px 0px 5px 0px;
+}
+
+.sketchesimg {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap:50px;
+}
+
+#work img, .sketches {
+  width:100%;
+}
+
+.hero img {
+  width: 50%!important;
+}
+
+.thename {
+  margin-bottom:50px;
+}
+
+.swotimages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:50px 15% 50px 15%;
+  grid-column-gap:100px;
+}
+
+.swotimages img {
+  width:100%!important;
+}
+
+.abouttheproject {
+  border-right:1px solid #f0f0f0;
+  padding-right:5px;
+}
+
+footer {
+  text-align:center;
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:2px 0px 2px 0px;
+  background-color: #F6B86E;
+  border-top:1px solid #fff;
+}
+
+nav a:hover, .ContactLinks a:hover {
+  border-bottom:2px solid #E78055;
+}
+
+.btn {
+  width: 200px;
+  line-height:3em;
+  margin-top:25px!important;
+  margin:auto;
+  text-align:center;
+  color: #494949;
+}
+
+.btn a{
+  color: #494949;
+  font-weight:500;
+  font-size:16px;
+}
+
+.btn a:hover {
+  color: #ffffff!important;
+}
+
+#Stork.btn {
+  background-color:#F6B86E;
+}
+
+#Cauldron.btn {
+  background-color: #E78055;
+}
+
+.researchimages {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.research img {
+  width:100%;
+}
+
+.visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align:;
+  grid-column-gap:50px;
+  grid-row-gap:100px;
+}
+
+.logos {
+  grid-column-start:1;
+  grid-row-start:1;
+  grid-row-end:5;
+  padding-right:5px;
+  border-right:1px solid #f0f0f0;
+}
+
+.brandname, .colors, .fonts {
+  grid-column-start:2;
+}
+
+.brandname {
+  grid-row-start:1;
+  grid-row-end:1;
+}
+
+.colors {
+  grid-row-start:2;
+  grid-row-end:2;
+}
+
+.fonts {
+  grid-row-start:3;
+  grid-row-end:3;
+}
+
+.visuals img {
+  display:block;
+  margin:auto;
+}
+.F7EBE8, .FFA987, .FFD4C3, .FF7B47, .grey {
+  text-align:center;
+}
+
+.F7EBE8 {
+  background-color: #F7EBE8;
+  margin-top:25px;
+}
+
+.FFA987 {
+  background-color: #FFA987;
+}
+
+.FFD4C3 {
+  background-color: #FFD4C3;
+}
+
+.FF7B47 {
+  background-color: #FF7B47;
+}
+
+.grey {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+b, strong {
+  font-weight:500;
+  color: #E78055;
+}
+
+u {
+  text-decoration:none;
+  border-bottom:1px solid #F6B86E;
+  color:#000;
+  font-weight:500;
+}
