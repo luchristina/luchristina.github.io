@@ -69,11 +69,15 @@ h2 {
 #work {
   display:grid;
   grid-template-columns: 1fr;
-  padding-top:75px;
-  width:50%;
+  padding-top:75px;;
   margin:auto;
   grid-gap:100px;
   color:#6C6C6C;
+}
+
+.Cauldron img {
+  width:50%!important;
+  margin:auto!important;
 }
 
 .Stork {
@@ -320,6 +324,10 @@ nav a:hover, .ContactLinks a:hover {
   background-color: #E78055;
 }
 
+.Cauldron {
+  text-align:center;
+}
+
 .researchimages {
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -420,6 +428,14 @@ u {
     font-size:1em;
   }
 
+  #work img {
+    width:100%;
+  }
+
+  .Cauldron img {
+    width: 100%!important;
+  }
+
   .container {
     margin:0px 25px 0px 25px;
   }
@@ -445,11 +461,6 @@ u {
     padding:10px 0px 10px 0px;
   }
 
-  #work {
-    display:flex;
-    flex-wrap:wrap;
-  }
-
   h1 {
     margin-bottom:25px;
   }
@@ -465,6 +476,8 @@ u {
 
   .Cauldron {
     margin-top:0px;
+    width:100%;
+    text-align:left;
   }
 
   .conclusionbox, .maingrid {
