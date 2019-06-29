@@ -428,6 +428,12 @@ u {
     font-size:1em;
   }
 
+  .hero h1 {
+    margin-left:0;
+    text-align:center!important;
+    font-size:2.5em;
+  }
+
   #work img {
     width:100%;
   }
@@ -443,6 +449,10 @@ u {
   .name {
     font-size:1.25em;
     margin-left:20px;
+  }
+
+  .hero h1 {
+    text-align:center;
   }
 
   .resumelink {
