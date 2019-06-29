@@ -568,6 +568,14 @@ u {
     width:100%;
   }
 
+  .main h1 {
+    text-align:left;
+  }
+
+  .projectinfo {
+    margin-top:100px;
+  }
+
   .swot, .swotimages, .personatypes, .userstories {
     grid-gap:10px;
   }
