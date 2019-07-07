@@ -40,7 +40,7 @@ h2 {
   grid-template-columns:1fr 1fr;
   margin-top:15px;
   margin-bottom:100px;
-  grid-column-gap:100px;
+  grid-column-gap:50px;
 }
 
 .title {
@@ -212,7 +212,7 @@ ul {
 .iterations {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 50px;
+  grid-column-gap: 25px;
   margin:0px 15% 50px 15%;
 }
 
@@ -331,7 +331,7 @@ nav a:hover, .ContactLinks a:hover {
 .researchimages {
   display:grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
+  grid-gap: 50px;
   margin-top:50px;
   margin-bottom:50px;
 }
@@ -423,9 +423,13 @@ u {
   font-weight:500;
 }
 
-@media screen and (max-width:414px) {
+@media screen and (max-width:768px) {
   body {
     font-size:1em;
+  }
+
+  .iterations {
+    margin:0;
   }
 
   .hero h1 {
@@ -447,7 +451,6 @@ u {
   }
 
   .name {
-    font-size:1.25em;
     margin-left:20px;
   }
 
@@ -455,17 +458,17 @@ u {
     text-align:center;
   }
 
-  .resumelink {
+  .resumelink, .aboutlink, .worklink {
     margin-right:20px;
   }
 
   .worklink {
-    text-align:center;
+    text-align:right;
   }
 
   nav {
     display:grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
     width:100%!important;
     margin:0;
     padding:10px 0px 10px 0px;
@@ -494,7 +497,7 @@ u {
     border:0;
   }
 
-  .sketchesimg, .iterations, .conclusionbox, .maingrid, .researchimages {
+  .sketchesimg, .conclusionbox, .maingrid, .researchimages {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
   }
@@ -510,6 +513,8 @@ u {
   .testingimages {
     grid-template-columns: 1fr 1fr;
     grid-gap:5px;
+    width: 50%;
+    margin:auto;
   }
 
   .caption.tacky {
@@ -534,25 +539,6 @@ u {
     margin-top:15px;
   }
 
-  .iteration1 {
-    grid-row-start:2;
-    grid-row-end: 2;
-  }
-
-  .iteration2 {
-    grid-row-start:4;
-    grid-row-end:4;
-  }
-
-  .iteration3 {
-    grid-row-start:6;
-    grid-row-end:6;
-  }
-
-  .iterations.caption div {
-    display:none!important;
-  }
-
   .visuals {
     grid-template-columns: 1fr;
     grid-gap:5px;
@@ -568,8 +554,12 @@ u {
     margin-bottom:100px;
   }
 
-  #aboutme {
+  #aboutme, .swot, .personatypes {
     grid-template-columns: 1fr;
+  }
+
+  #role, #roledesc {
+    display:none;
   }
 
   #aboutme img{
@@ -588,5 +578,59 @@ u {
 
   .swot, .swotimages, .personatypes, .userstories {
     grid-gap:10px;
+  }
+
+  .userstories {
+    grid-template-columns:2fr 1fr;
+  }
+
+  .strengths {
+    grid-row-start:2;
+    grid-row-end:2;
+  }
+
+  .weaknesses {
+    grid-row-start:4;
+    grid-row-end:4;
+  }
+
+  .opportunities {
+    grid-row-start:6;
+    grid-row-end:6;
+  }
+
+  .threats {
+    grid-row-start:8;
+    grid-row-end:8;
+  }
+}
+
+@media screen and (max-width:525px) {
+  .iterations {
+    grid-template-columns: 1fr;
+    grid-column-gap:5px;
+  }
+
+  .name {
+    font-size:1em;
+  }
+
+  .iteration1 {
+    grid-row-start:2;
+    grid-row-end: 2;
+  }
+
+  .iteration2 {
+    grid-row-start:4;
+    grid-row-end:4;
+  }
+
+  .iteration3 {
+    grid-row-start:6;
+    grid-row-end:6;
+  }
+
+  .iterations.caption div {
+    display:none!important;
   }
 }
