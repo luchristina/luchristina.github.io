@@ -1,3 +1,103 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* new nav starts here */
+
+header {
+  background: #fff;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:999;
+  width:100%;
+  padding:25px 0px 25px 0px;
+}
+
+nav {
+  position: absolute;
+  text-align:left;
+  top:100%;
+  left:0;
+  background: #fff;
+  width:100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style:none;
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a {
+  color: #E78055;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight:500;
+  opacity:0;
+  transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+  opacity:1;
+  transition: opacity 200ms ease-in-out 200ms;
+}
+
+.nav-toggle {
+  display:none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left:0;
+  margin-left:1em;
+  height:100%;
+  display:flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before, .nav-toggle-label span::after {
+  display:block;
+  background:#000;
+  height:2px;
+  width:2em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before, .nav-toggle-label span::after {
+  content:'';
+  position: absolute;
+}
+
+.nav-toggle-label span::before {
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+  top: 7px;
+}
+
+/* new nav ends here */
+
 body {
   font-family:'Work Sans';
   line-height:1.75em;
@@ -5,17 +105,9 @@ body {
   color: #494949;
 }
 
-nav {
-  background-color:#fff;
-  display:grid;
-  grid-template-columns:3fr .75fr .75fr .75fr;
-  padding:25px 100px 25px 100px;
-  position:sticky;
-  top:0;
-}
 
 .container {
-    margin: 0px 100px 0px 100px;
+    margin: 50px 100px 0px 100px;
 }
 
 .overall {
@@ -35,6 +127,10 @@ h2 {
   color: #E78055;
 }
 
+.hero h1 {
+  font-size: 3em;
+}
+
 .swot {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -50,20 +146,12 @@ h2 {
   background-color: #f0f0f0;
 }
 
-#work h1 {
-  text-align:center!important;
-}
-
 #aboutme h1 {
   margin:0;
 }
 
 .Cauldron h1, .Stork h1, #aboutme h1 {
   color: #494949;
-}
-
-.Cauldron h1 {
-  margin-top:25px;
 }
 
 #work {
@@ -76,7 +164,6 @@ h2 {
 }
 
 .Cauldron img {
-  width:50%!important;
   margin:auto!important;
 }
 
@@ -96,7 +183,7 @@ h2 {
 
 #aboutme {
   display:grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   padding-top:150px;
   grid-gap:100px;
   color:#6C6C6C;
@@ -145,7 +232,7 @@ ul {
   text-align:center;
 }
 
-.aboutlink, .worklink, .resumelink {
+.aboutlink, .worklink, .resumelink, .contactlink {
   font-size:1.1em;
   text-align:right;
   font-weight:500;
@@ -160,6 +247,10 @@ ul {
   font-weight: 500;
   text-transform:uppercase;
   letter-spacing:1px;
+}
+
+.thename h1 {
+  margin:25px 0px 25px 0px;
 }
 
 .main {
@@ -293,12 +384,8 @@ footer {
   border-top:1px solid #fff;
 }
 
-nav a:hover, .ContactLinks a:hover {
-  border-bottom:2px solid #E78055;
-}
-
 .btn {
-  width: 200px;
+  width: 100%;
   line-height:3em;
   margin-top:25px!important;
   margin:auto;
@@ -320,12 +407,22 @@ nav a:hover, .ContactLinks a:hover {
   background-color:#F6B86E;
 }
 
+.name {
+  margin-top:20px;
+}
+
 #Cauldron.btn {
   background-color: #E78055;
 }
 
 .Cauldron {
-  text-align:center;
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap:50px;
+}
+
+.cauldronsum {
+  text-align:left;
 }
 
 .researchimages {
@@ -423,9 +520,32 @@ u {
   font-weight:500;
 }
 
+.competitiveanalysis {
+  display:none;
+}
+
 @media screen and (max-width:768px) {
   body {
-    font-size:1em;
+    font-size:1.15em;
+  }
+
+  .sketchesimg, .conclusionbox, .maingrid, .researchimages {
+    grid-template-columns: 1fr;
+    grid-row-gap:5px;
+  }
+
+  .sketchesimg {
+    margin:auto;
+    width:50%;
+  }
+
+  #work h1 {
+    margin-top:50px;
+    text-align:center!important;
+  }
+
+  .abouttheproject, .overall {
+    border:0;
   }
 
   .iterations {
@@ -435,7 +555,6 @@ u {
   .hero h1 {
     margin-left:0;
     text-align:center!important;
-    font-size:2.5em;
   }
 
   #work img {
@@ -450,28 +569,8 @@ u {
     margin:0px 25px 0px 25px;
   }
 
-  .name {
-    margin-left:20px;
-  }
-
   .hero h1 {
     text-align:center;
-  }
-
-  .resumelink, .aboutlink, .worklink {
-    margin-right:20px;
-  }
-
-  .worklink {
-    text-align:right;
-  }
-
-  nav {
-    display:grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
-    width:100%!important;
-    margin:0;
-    padding:10px 0px 10px 0px;
   }
 
   h1 {
@@ -495,11 +594,6 @@ u {
 
   .conclusionbox, .maingrid {
     border:0;
-  }
-
-  .sketchesimg, .conclusionbox, .maingrid, .researchimages {
-    grid-template-columns: 1fr;
-    grid-row-gap:5px;
   }
 
   .hero img {
@@ -554,7 +648,7 @@ u {
     margin-bottom:100px;
   }
 
-  #aboutme, .swot, .personatypes {
+  #aboutme, .swot, .personatypes, .Cauldron {
     grid-template-columns: 1fr;
   }
 
@@ -634,3 +728,61 @@ u {
     display:none!important;
   }
 }
+
+/* new nav code pt 2*/
+
+@media screen and (min-width:800px) {
+  .nav-toggle-label {
+    display:none;
+  }
+
+  header {
+    text-align:left;
+    padding-left:100px;
+    padding-right:100px;
+    display: grid;
+    grid-template-columns: 2fr .75fr .75fr .75fr .75fr .75fr;
+  }
+
+  nav {
+    all: unset;
+    grid-column:3 / 7;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+  }
+
+  nav a {
+    opacity: 1;
+    position:relative;
+  }
+
+  nav a::before {
+    content: '';
+    display:block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    bottom: -.5em;
+    left:0;
+    right:0;
+    transform: scale(0, 1);
+    transform-origin:left;
+    transition: transform ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1,1);
+  }
+}
+
+/* end new nav code pt 2*/

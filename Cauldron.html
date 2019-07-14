@@ -6,6 +6,8 @@
   <title>&#9996;&#127996; Christina & UX</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="dist/hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135477748-1"></script>
@@ -20,9 +22,21 @@
 </head>
 
 <body>
-  <nav>
-    <div class="name"><a href="index.html">Christina Lu</a></div> <div class="aboutlink"><a href="index.html#aboutme">About</a></div> <div class="worklink"><a href="index.html#work">Work</a></div> <div class="resumelink"><a href="https://drive.google.com/file/d/1wCWOfyhS38VDWT5JXVamANipbHL6C1UI/view?usp=sharing">Resume</a></div>
-  </nav>
+  <header>
+    <h1 class="name"><a href="index.html">Christina Lu</a></h1>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="index.html#work">Work</a></li>
+        <li><a href="index.html#aboutme">About</a></li>
+        <li><a href="https://drive.google.com/file/d/1wCWOfyhS38VDWT5JXVamANipbHL6C1UI/view?usp=sharing">Resume</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
   <section class="container">
     <section class="main">
       <div class="hero">
@@ -35,17 +49,17 @@
       <div class="maingrid">
         <div class="abouttheproject">
           <h1>About the project</h1>
-          <b>The problem:</b> Grocery shopping is a task that some might not find exciting. Many times people could spend more time in a grocery store than necessary.<br><br>
-          <b>The goal:</b> To create a mobile prototype that helps people shop for groceries efficiently.
+          <b>The problem</b> Grocery shopping is a task that some might not find exciting. Many times people could spend more time in a grocery store than necessary.<br><br>
+          <b>The goal</b> To create a mobile prototype that helps people shop for groceries efficiently.
         </div>
 
         <div class="projectinfo">
           <h1>Project details</h1>
-          <b>Role:</b> UX/Product Designer<br>
-          <b>Tasks:</b> UX Design: Research, sketches, wireframes, branding, mockups, prototypes, usability testing<br>
-          <b>Duration:</b> ~ 1 month<br>
-          <b>Tools:</b> Figma, Usability Hub, Google Suite<br>
-          <b>Deliverables:</b> Mobile application
+          <b>Role</b> UX/Product Designer<br>
+          <b>Tasks</b> UX Design: Research, sketches, wireframes, branding, mockups, prototypes, usability testing<br>
+          <b>Duration</b> ~ 1 month<br>
+          <b>Tools</b> Figma, Usability Hub, Google Suite<br>
+          <b>Deliverables</b> Mobile application
         </div>
       </div>
     </section>
@@ -56,11 +70,11 @@
       <div class="researchimages">
         <div class="researchfrustrations">
           <img src="images/ResearchAisles.jpg" alt="Research Frustration Walking Between Aisles 44 percent"><br>
-          I wanted to know what grocery shoppers were not happy about. This allows me to understand what the underlying issues are. From the chart above <u>these frustrations all relate to time spent</u>.
+          I wanted to know what grocery shoppers were not happy about. From the chart above <u>these frustrations all relate to time spent</u>.
         </div>
         <div class="researchmethod">
           <img src="images/ResearchMedium.jpg" alt="Research Mediums of Grocery Lists"><br>
-          This question was regarding the method of which a shopper saves their grocery lists. 56% of this sample saves it using their phone's note app (ie. iPhone Notes). Surprisingly, the second most-chosen option was 'memory'. Still, <u>73% of this sample relies on physically or digitally writing down their lists</u>, which means there is a large market for this niche.
+          This question was regarding the method of which a shopper saves their grocery lists. <u>73% of this sample relies on physically or digitally writing down their lists</u>, which means there is a large market for this niche.
         </div>
       </div>
 
@@ -200,13 +214,13 @@
         <div class="personatypes">
           <div class="averagecook">
             <h2>The Average Cook</h2>
-            <b>Frustrations:</b> She currently saves her grocery list on her phone's Notes app. Nothing is categorized and she constantly goes to the same aisle multiple times to get all of her items.<br><br>
-            <b>Goals:</b> She would love an app that organizes her grocery list by type, so that she knows what items would be in a certain aisle or part of the store.
+            <b>Frustrations</b> She currently saves her grocery list on her phone's Notes app. Nothing is categorized and she constantly goes to the same aisle multiple times to get all of her items.<br><br>
+            <b>Goals</b> She would love an app that organizes her grocery list by type, so that she knows what items would be in a certain aisle or part of the store.
           </div>
           <div class="partyhost">
             <h2>The Party Host</h2>
-            <b>Frustrations:</b> Caryn likes to cook for her potluck parties, but her friends bring fast food. She needs to find a compromise with her friends in order to get rid of the contstant fast food that keeps showing up to the party!<br><br>
-            <b>Goals:</b> To compromise, Caryn is willing to cook all the food if her friends buy the groceries. She would like an app that has a sharing function to fix her fast-food issue!
+            <b>Frustrations</b> She likes to cook for her potluck parties, but her friends bring fast food. She needs to find a compromise with her friends in order to get rid of the contstant fast food that keeps showing up to the party!<br><br>
+            <b>Goals</b> To compromise, She is willing to cook all the food if her friends buy the groceries. She would like an app that has a sharing function to fix her fast-food issue!
           </div>
         </div>
       </div>
@@ -359,7 +373,7 @@
   </section>
 
 <section id="contact">
-  <h1 class="name">Let's get connected!</h1>
+  <h1>Let's get in touch.</h1>
   <div class="ContactLinks">
     <div class="LinkedIn"><a href="https://www.linkedin.com/in/luchristina">LinkedIn</a></div> <div class="Email"><a href="mailto: mailboxoftina@gmail.com">Email</a></div> <div class="Twitter"><a href="https://www.twitter.com/xtinaUX">Twitter</a></div>
   </div>
