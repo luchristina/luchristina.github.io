@@ -6,11 +6,10 @@
 header {
   background: #fff;
   text-align:center;
-  position:sticky;
+  position:fixed;
   top:0;
   z-index:999;
   width:100%;
-  padding:25px 0px 25px 0px;
 }
 
 nav {
@@ -27,7 +26,7 @@ nav {
 
 nav ul {
   margin: 0;
-  padding:0;
+  margin-top:20px;
   list-style:none;
 }
 
@@ -47,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: #494949;
 }
 
 .nav-toggle:checked ~ nav {
@@ -131,6 +130,15 @@ h2 {
   font-size: 3em;
 }
 
+.ContactLinks {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width:30%;
+  margin:auto;
+  margin-top:50px;
+}
+
 .swot {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -194,13 +202,6 @@ ul {
   padding-left:15px;
 }
 
-.ContactLinks {
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin:50px 25% 50px 25%;
-  text-align:center;
-}
-
 .maingrid {
   display:grid;
   grid-template-columns: 1fr 1fr;
@@ -230,12 +231,6 @@ ul {
   margin-top:150px;
   margin-bottom:100px;
   text-align:center;
-}
-
-.aboutlink, .worklink, .resumelink, .contactlink {
-  font-size:1.1em;
-  text-align:right;
-  font-weight:500;
 }
 
  .LinkedIn, .Email, .Twitter {
@@ -741,6 +736,7 @@ u {
     padding-left:100px;
     padding-right:100px;
     display: grid;
+    position:sticky;
     grid-template-columns: 2fr .75fr .75fr .75fr .75fr .75fr;
   }
 
