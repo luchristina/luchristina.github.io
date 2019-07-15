@@ -18,6 +18,7 @@ nav {
   top:100%;
   left:0;
   background: #fff;
+  z-index:2000;
   width:100%;
   transform: scale(1,0);
   transform-origin: top;
@@ -58,8 +59,23 @@ nav a:hover {
   transition: opacity 200ms ease-in-out 200ms;
 }
 
+.nav-toggle:checked ~ .nav-toggle-label-off {
+  display:block;
+}
+
 .nav-toggle {
+  z-index:1000;
   display:none;
+}
+
+.nav-toggle-label-off {
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  display: none;
+  z-index:1;
 }
 
 .nav-toggle-label {
@@ -520,13 +536,19 @@ u {
 }
 
 @media screen and (max-width:768px) {
-  body {
-    font-size:1.15em;
-  }
 
   .sketchesimg, .conclusionbox, .maingrid, .researchimages {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
+  }
+
+  .ContactLinks {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width:50%;
+    margin:auto;
+    margin-top:50px;
   }
 
   .sketchesimg {
@@ -702,6 +724,15 @@ u {
 
   .name {
     font-size:1em;
+  }
+
+  .ContactLinks {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width:75%;
+    margin:auto;
+    margin-top:50px;
   }
 
   .iteration1 {
