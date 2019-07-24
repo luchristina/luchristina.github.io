@@ -689,6 +689,11 @@ u {
 
 @media screen and (max-width:768px) {
 
+  .intro {
+    padding-top:150px;
+    line-height:1.25em;
+  }
+
   .sketchesimg, .conclusionbox, .maingrid {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
@@ -915,7 +920,7 @@ u {
   }
 
   .name {
-    font-size:1em;
+    font-size:1.5em;
   }
 
   .ContactLinks {
