@@ -129,9 +129,11 @@ body {
   color: #494949;
 }
 
-
+.intro {
+  line-height:1.2em;
+}
 .container {
-    margin: 50px 100px 0px 100px;
+    margin: 100px 100px 0px 100px;
 }
 
 .overall {
@@ -688,12 +690,6 @@ u {
 }
 
 @media screen and (max-width:768px) {
-
-  .intro {
-    padding-top:150px;
-    line-height:1.25em;
-  }
-
   .sketchesimg, .conclusionbox, .maingrid {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
@@ -757,7 +753,8 @@ u {
   }
 
   .container {
-    margin:0px 25px 0px 25px;
+    margin-left:25px;
+    margin-right:25px;
   }
 
   .hero h1 {
@@ -920,7 +917,7 @@ u {
   }
 
   .name {
-    font-size:1.5em;
+    font-size:1.25em;
   }
 
   .ContactLinks {
