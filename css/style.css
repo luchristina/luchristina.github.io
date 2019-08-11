@@ -41,7 +41,7 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight:500;
+  font-weight:400;
   opacity:0;
   transition: opacity 150ms ease-in-out;
 }
@@ -51,7 +51,7 @@ img {
 }
 
 nav a:hover {
-  color: #494949;
+  color: #151515;
 }
 
 .nav-toggle:checked ~ nav {
@@ -123,14 +123,20 @@ nav a:hover {
 /* new nav ends here */
 
 body {
-  font-family:'Roboto', sans-serif;
+  font-family:'Rubik', sans-serif;
   line-height:1.6em;
   font-size:14px;
-  color: #494949;
+  color: #151515;
+}
+
+::selection {
+  background: #D1D5EE85;
 }
 
 .intro {
-  line-height:1.2em;
+  line-height:1.5em;
+  font-family:'DM Serif Display', sans-serif;
+  text-transform:none;
 }
 .container {
     margin: 100px 100px 0px 100px;
@@ -143,11 +149,11 @@ body {
 
 h1 {
   font-weight:500;
-  font-size:1.25em;
-  letter-spacing:1px;
-  text-transform: uppercase;
+  font-size:2.5em;
+  letter-spacing:0px;
+  font-family: DM Serif Display;
   margin-bottom:15px;
-  color: #494949;
+  color: #151515;
 }
 
 h2 {
@@ -209,7 +215,7 @@ h2 {
 }
 
 .Cauldron h1, .Archive h1, #aboutme h1 {
-  color: #494949;
+  color: #151515;
 }
 
 #work {
@@ -218,7 +224,7 @@ h2 {
   padding-top:75px;;
   margin:auto;
   grid-gap:100px;
-  color:#6C6C6C;
+  color:#151515;
 }
 
 .Cauldron img, .Archive img {
@@ -237,10 +243,9 @@ h2 {
 
 #aboutme {
   display:grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: .75fr 2fr;
   padding-top:200px;
   grid-gap:100px;
-  color:#6C6C6C;
 }
 
 ul {
@@ -270,7 +275,7 @@ ul {
 }
 
 #contact {
-  margin-top:200px;
+  margin-top:150px;
   background-color: #172EA820;
   padding:100px 0px 100px 0px;
   text-align:center;
@@ -532,8 +537,8 @@ footer {
   grid-column-gap:50px;
 }
 
-.cauldronsum h1, .archivesum h1{
-  text-align:center;
+.cauldronsum h1, .archivesum h1, .bio h1{
+  padding-bottom:15px;
 }
 
 .researchimages, .researchimages2 {
@@ -543,10 +548,6 @@ footer {
   margin-top:50px;
   text-align:center;
   margin-bottom:50px;
-}
-
-.container h1 {
-  font-size:2em;
 }
 
 .researchimages {
@@ -665,6 +666,10 @@ b, strong, .caption {
   font-weight:500;
   text-transform: uppercase;
   color: #5367CE;
+}
+
+.intro b {
+  text-transform:none;
 }
 
 .iPhoneAnalysis h2, .AnyList h2, .GroceryList h2, .competitiveanalysis h2 {
