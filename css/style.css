@@ -344,6 +344,7 @@ ul {
 }
 
 .nextproject {
+  font-family: 'DM Serif Display', sans-serif;
   text-align:center;
   font-size:2em;
 }
@@ -733,6 +734,10 @@ u {
     text-align:center!important;
   }
 
+  #aboutme h1 {
+    text-align:center!important;
+  }
+
   .abouttheproject, .overall {
     border:0;
   }
@@ -926,8 +931,12 @@ u {
     grid-column-gap:5px;
   }
 
+  h1 {
+    font-size:2.25em;
+  }
+
   .name {
-    font-size:1.25em;
+    font-size:2em;
   }
 
   .ContactLinks {
