@@ -349,7 +349,7 @@ ul {
   grid-gap:50px;
 }
 
-.hero a:hover, .usabilitytesting a:hover {
+.usabilitytesting a:hover {
   color: #8796E5;
   border-bottom: 2px solid #5367CE;
 }
@@ -442,6 +442,8 @@ ul {
   font-size:1.5rem;
   line-height:1.75em;
   color: #5367CE;
+  background-color: #172EA820;
+  border-radius:20px;
 }
 
 .visuals, .visuals2 {
@@ -557,6 +559,14 @@ footer {
   font-weight:500;
   font-size:1.25em;
   display:block;
+  text-align:center;
+}
+
+.btnpartial {
+  margin-top:25px!important;
+  margin:auto;
+  font-weight:500;
+  font-size:1.25em;
   text-align:center;
 }
 
