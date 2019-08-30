@@ -309,7 +309,7 @@ ul {
  }
 
 .name {
-  font-size:2.5em;
+  font-size:2.5rem;
   font-weight: 500;
   text-transform:uppercase;
   letter-spacing:1px;
@@ -444,6 +444,8 @@ ul {
   color: #5367CE;
   background-color: #172EA820;
   border-radius:20px;
+  margin:25px 0px 25px 0px;
+  padding:5px;
 }
 
 .visuals, .visuals2 {
@@ -728,7 +730,7 @@ b, strong, .caption {
   font-weight:500;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:860px) {
   .sketchesimg, .conclusionbox, .maingrid {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
@@ -740,6 +742,11 @@ b, strong, .caption {
 
   .sketchesimg {
     padding:0px 20% 0px 20%;
+  }
+
+  .profilepic {
+    margin:auto;
+    width:50%;
   }
 
   .thename {
@@ -963,15 +970,19 @@ b, strong, .caption {
     grid-column-gap:5px;
   }
 
+  .profilepic {
+    width:100%;
+  }
+
+  .intro {
+    font-size:2rem;
+  }
+
   .usabilityupdates {
     grid-column-gap:5px;
   }
 
   h1 {
-    font-size:2em;
-  }
-
-  .name {
     font-size:2em;
   }
 
@@ -1018,6 +1029,10 @@ b, strong, .caption {
 @media screen and (min-width:800px) {
   .nav-toggle-label {
     display:none;
+  }
+
+  .caption {
+    margin-top:50px;
   }
 
   header {
