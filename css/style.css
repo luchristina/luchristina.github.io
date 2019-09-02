@@ -459,6 +459,12 @@ ul {
   margin-bottom:1.5rem;
 }
 
+.storyboard {
+  display:block;
+  width:50%;
+  margin:auto;
+}
+
 a {
   text-decoration:none;
   color: #5367CE;
@@ -734,6 +740,10 @@ b, strong, .caption {
   .sketchesimg, .conclusionbox, .maingrid {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
+  }
+
+  .storyboard {
+    width:100%;
   }
 
   .partyhost, .colors, .fonts, .logos {
