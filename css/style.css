@@ -12,6 +12,11 @@ header {
   width:100%;
 }
 
+hr {
+  border:1px solid #f0f0f0;
+  width: 50%;
+}
+
 nav {
   position: absolute;
   text-align:left;
@@ -347,11 +352,6 @@ ul {
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-gap:50px;
-}
-
-.usabilitytesting a:hover {
-  color: #8796E5;
-  border-bottom: 2px solid #5367CE;
 }
 
 .usabilityupdates {
@@ -744,6 +744,11 @@ b, strong, .caption {
 
   .storyboard {
     width:100%;
+  }
+
+  hr {
+    border:1px solid #f0f0f0;
+    width: 100%;
   }
 
   .partyhost, .colors, .fonts, .logos {
