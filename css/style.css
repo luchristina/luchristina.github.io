@@ -178,6 +178,16 @@ h2 {
   font-size: 3em;
 }
 
+.UIimage{
+  width:75%;
+  margin:auto;
+  margin-top:150px;
+}
+
+.lockfulcolors {
+  margin:50px 0px 0px 0px;
+}
+
 .ContactLinks {
   display: flex;
   align-items: flex-end;
@@ -193,6 +203,12 @@ h2 {
   margin-top:15px;
   margin-bottom:100px;
   grid-column-gap:50px;
+}
+
+.about {
+  width:75%;
+  margin:auto;
+  margin-top:150px;
 }
 
 .title {
@@ -256,7 +272,7 @@ i, em {
   width:100%;
 }
 
-.personatypes {
+.personatype {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap:100px;
@@ -276,8 +292,8 @@ ul {
 
 .maingrid {
   display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
+  grid-template-columns: 1fr;
+  grid-gap:150px;
 }
 
 .caption.tacky {
@@ -320,8 +336,20 @@ ul {
   letter-spacing:1px;
 }
 
+.projectinfo, .abouttheproject {
+  line-height:2.5rem;
+}
+
 .thename h1 {
   margin:25px 0px 25px 0px;
+}
+
+.thename2 h1 {
+  margin:100px 0px 25px 0px;
+}
+
+.thename2 {
+  margin:0px 50px 0px 50px;
 }
 
 .main {
@@ -332,7 +360,7 @@ ul {
   margin-bottom:10px;
 }
 
-.conclusion, .nextproject, .usabilitytesting, .hifi, .maingrid, .research, .userflow, .competitiveanalysis, .personas, .sketches, .stories, .branding {
+.conclusion, .personatypes, .nextproject, .usabilitytesting, .hifi, .maingrid, .research, .userflow, .competitiveanalysis, .personas, .sketches, .stories, .branding {
   margin-top: 150px;
 }
 
@@ -348,10 +376,14 @@ ul {
   margin-top:15px;
 }
 
+.spacer {
+  margin-bottom:5rem;
+}
+
 .conclusionbox {
   display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:50px;
+  grid-template-columns: 1fr;
+  grid-gap:0px;
 }
 
 .usabilityupdates {
@@ -521,7 +553,7 @@ a:hover {
 }
 
 .hero img {
-  width: 50%!important;
+  width: 75%!important;
 }
 
 .thename {
@@ -531,6 +563,10 @@ a:hover {
   text-transform: uppercase;
   margin-bottom:50px;
   width: 500px;
+}
+
+.thename img {
+  width:75%!important;
 }
 
 .swotimages {
@@ -544,7 +580,7 @@ a:hover {
   width:100%!important;
 }
 
-.abouttheproject, .averagecook {
+.averagecook {
   border-right:1px solid #f0f0f0;
   padding-right:50px;
 }
@@ -586,7 +622,7 @@ footer {
   text-align:center;
 }
 
-.Cauldron, .Archive {
+.Cauldron, .Archive, .Lockful {
   display:grid;
   grid-template-columns: 1.5fr 1fr;
   grid-column-gap:50px;
@@ -746,6 +782,12 @@ b, strong, .caption {
     width:100%;
   }
 
+  .UIimage, .about{
+    width:90%;
+    margin:auto;
+    margin-top:150px;
+  }
+
   hr {
     border:1px solid #f0f0f0;
     width: 100%;
@@ -765,8 +807,7 @@ b, strong, .caption {
   }
 
   .thename {
-    width:100%;
-    margin:0px 10px 0px 10px;
+    width:90%;
   }
 
   .researchimages {
@@ -813,7 +854,7 @@ b, strong, .caption {
     width:100%;
   }
 
-  .Cauldron img, .Archive img {
+  .Cauldron img, .Archive img, .Lockful img {
     width:100%!important;
   }
 
@@ -835,7 +876,7 @@ b, strong, .caption {
     margin-bottom:10px;
   }
 
-  .Archive, .Cauldron {
+  .Archive, .Cauldron, .Lockful {
     margin-top:50px;
   }
 
@@ -924,7 +965,7 @@ b, strong, .caption {
     margin-top:50px;
   }
 
-  #aboutme, .swot, .personatypes, .Cauldron, .Archive {
+  #aboutme, .swot, .personatype, .Cauldron, .Archive, .Lockful {
     grid-template-columns: 1fr;
   }
 
