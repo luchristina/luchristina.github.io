@@ -7,6 +7,7 @@ header {
   background: #fff;
   text-align:center;
   position:fixed;
+  padding:0px 100px 0px 100px;
   top:0;
   z-index:999;
   width:100%;
@@ -15,6 +16,10 @@ header {
 hr {
   border:1px solid #f0f0f0;
   width: 50%;
+}
+
+img {
+  width:100%;
 }
 
 nav {
@@ -32,7 +37,7 @@ nav {
 
 nav ul {
   margin: 0;
-  margin-top:20px;
+  margin-top:0px;
   list-style:none;
 }
 
@@ -42,21 +47,21 @@ nav li {
 }
 
 nav a {
-  color: #5367CE;
+  color: #151515;
   text-decoration: none;
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 1.25rem;
+  text-transform:;
   font-weight:500;
   opacity:0;
   transition: opacity 150ms ease-in-out;
 }
 
-img {
-  width:100%;
+nav a:visited, nav a:active {
+  color: #D1D5EE;
 }
 
 nav a:hover {
-  color: #151515;
+  color: #5367CE;
 }
 
 .nav-toggle:checked ~ nav {
@@ -128,8 +133,8 @@ nav a:hover {
 /* new nav ends here */
 
 body {
-  font-family:'Rubik', sans-serif;
-  line-height:1.6em;
+  font-family:'Be Vietnam', sans-serif;
+  line-height:1.75rem;
   font-size:16px;
   color: #151515;
 }
@@ -141,10 +146,10 @@ body {
 .intro {
   line-height:1.5em;
   font-size:2.25rem;
-  font-family:'DM Serif Display', sans-serif;
+  font-weight:600;
 }
 .container {
-    margin: 100px 100px 0px 100px;
+    margin: 50px 200px 0px 200px;
 }
 
 .overall {
@@ -157,10 +162,9 @@ body {
 }
 
 h1 {
-  font-weight:500;
+  font-weight:600;
   font-size:2rem;
-  letter-spacing:1px;
-  font-family: DM Serif Display;
+  font-family: 'Be Vietnam';
   margin-bottom:2rem;
   color: #151515;
 }
@@ -168,7 +172,6 @@ h1 {
 h2 {
   font-weight: 500;
   font-size: 1.5rem;
-  font-family: 'Rubik';
   letter-spacing:1px;
   margin-bottom:15px;
   color: #172EA8;
@@ -181,7 +184,7 @@ h2 {
 .UIimage{
   width:75%;
   margin:auto;
-  margin-top:150px;
+  margin-top:100px;
 }
 
 .lockfulcolors {
@@ -208,7 +211,7 @@ h2 {
 .about {
   width:75%;
   margin:auto;
-  margin-top:150px;
+  margin-top:100px;
 }
 
 .title {
@@ -223,7 +226,7 @@ h2 {
 }
 
 .actionemail {
-  border-bottom:5px solid #172EA8;
+  border-bottom:1px solid #172EA8;
 }
 
 i, em {
@@ -293,23 +296,23 @@ ul {
 .maingrid {
   display:grid;
   grid-template-columns: 1fr;
-  grid-gap:150px;
+  grid-gap:100px;
 }
 
 .caption.tacky {
-  font-size:1.25rem;
+  font-size:.9rem;
   grid-column: 1 / span 2;
   grid-row-start:2;
 }
 
 .caption.smallfont {
-  font-size:1.25rem;
+  font-size:.9rem;
   grid-column: 3 / span 2;
   grid-row-start:2;
 }
 
 .caption.smallphoto {
-  font-size:1.25rem;
+  font-size:.9rem;
   grid-column: 5 / span 2;
   grid-row-start:2;
 }
@@ -319,7 +322,7 @@ ul {
 }
 
 #contact {
-  margin-top:150px;
+  margin-top:100px;
   background-color: #172EA820;
   padding:100px 0px 100px 0px;
   text-align:center;
@@ -332,12 +335,9 @@ ul {
 .name {
   font-size:2.5rem;
   font-weight: 500;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-.projectinfo, .abouttheproject {
-  line-height:2.5rem;
+  text-transform:;
+  letter-spacing:0px;
+  margin-bottom:0;
 }
 
 .thename h1 {
@@ -349,7 +349,8 @@ ul {
 }
 
 .thename2 {
-  margin:0px 50px 0px 50px;
+  width:500px;
+  margin:auto;
 }
 
 .main {
@@ -361,7 +362,7 @@ ul {
 }
 
 .conclusion, .personatypes, .nextproject, .usabilitytesting, .hifi, .maingrid, .research, .userflow, .competitiveanalysis, .personas, .sketches, .stories, .branding {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .iteration1, .iteration2, .iteration3 {
@@ -377,7 +378,7 @@ ul {
 }
 
 .spacer {
-  margin-bottom:5rem;
+  margin-bottom:2rem;
 }
 
 .conclusionbox {
@@ -399,9 +400,9 @@ ul {
 }
 
 .nextproject {
-  font-family: 'DM Serif Display', sans-serif;
   text-align:center;
-  font-size:2em;
+  font-size:2rem;
+  font-weight:500;
 }
 
 .testingimages {
@@ -473,11 +474,12 @@ ul {
   text-align:center;
   font-size:1.5rem;
   line-height:1.75em;
+  font-weight:500;
   color: #5367CE;
   background-color: #172EA820;
   border-radius:20px;
   margin:25px 0px 25px 0px;
-  padding:5px;
+  padding:5px 5px 10px 5px;
 }
 
 .visuals, .visuals2 {
@@ -520,7 +522,7 @@ a:hover {
 
 .proto{
   background-color: #D1D5EE;
-  padding:10px 30px 10px 30px;
+  padding:10px 30px 15px 30px;
   border-radius: 30px;
 }
 
@@ -530,7 +532,7 @@ a:hover {
 
 .sketchesimg {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap:5px;
 }
 
@@ -559,10 +561,8 @@ a:hover {
 .thename {
   margin:auto;
   font-weight:500;
-  color: #5367CE;
-  text-transform: uppercase;
+  text-transform: ;
   margin-bottom:50px;
-  width: 500px;
 }
 
 .thename img {
@@ -591,7 +591,7 @@ footer {
   position: fixed;
   bottom:0;
   left:0;
-  text-transform: uppercase;
+  text-transform: ;
   width:100%;
   padding:2px 0px 2px 0px;
   background-color: #D1D5EE;
@@ -616,10 +616,20 @@ footer {
 
 .name{
   margin-top:20px;
+  height:100%;
+}
+
+.name img {
+  height:5rem;
+  width:5rem;
 }
 
 .nameheader {
   text-align:center;
+}
+
+.Cauldron {
+  padding-top:50px;
 }
 
 .Cauldron, .Archive, .Lockful {
@@ -768,14 +778,18 @@ u {
   border-right:1px solid #f0f0f0;
 }
 
-b, strong, .caption {
-  font-weight:500;
+b, strong {
+  font-weight:600;
 }
 
 @media screen and (max-width:860px) {
   .sketchesimg, .conclusionbox, .maingrid {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
+  }
+
+  header {
+    margin:0;
   }
 
   .storyboard {
@@ -785,7 +799,7 @@ b, strong, .caption {
   .UIimage, .about{
     width:90%;
     margin:auto;
-    margin-top:150px;
+    margin-top:100px;
   }
 
   hr {
@@ -808,6 +822,10 @@ b, strong, .caption {
 
   .thename {
     width:90%;
+  }
+
+  .averagecook {
+    border:none;
   }
 
   .researchimages {
@@ -859,8 +877,7 @@ b, strong, .caption {
   }
 
   .container {
-    margin-left:25px;
-    margin-right:25px;
+    margin: 100px 100px 0px 100px;
   }
 
   .hero h1 {
@@ -917,7 +934,7 @@ b, strong, .caption {
   .testingimages {
     grid-template-columns: 1fr 1fr;
     grid-gap:5px;
-    width: 50%;
+    width: 75%;
     margin:auto;
   }
 
@@ -967,6 +984,10 @@ b, strong, .caption {
 
   #aboutme, .swot, .personatype, .Cauldron, .Archive, .Lockful {
     grid-template-columns: 1fr;
+  }
+
+  .personatype {
+    grid-gap:50px;
   }
 
   #role, #roledesc {
@@ -1021,6 +1042,16 @@ b, strong, .caption {
 }
 
 @media screen and (max-width:525px) {
+
+  header{
+    padding:0px;
+    padding:0px 16px 0px 16px;
+  }
+
+   .container {
+     margin:100px 16px 0px 16px;
+   }
+
   .iterations {
     grid-template-columns: 1fr;
     grid-column-gap:5px;
@@ -1093,11 +1124,9 @@ b, strong, .caption {
 
   header {
     text-align:left;
-    padding-left:100px;
-    padding-right:100px;
+    margin:0;
     display: grid;
     position:sticky;
-    grid-template-columns: 2fr .75fr .75fr .75fr .75fr .75fr;
   }
 
   nav {
@@ -1111,6 +1140,7 @@ b, strong, .caption {
   nav ul {
     display: flex;
     justify-content: flex-end;
+    margin-top:20px;
   }
 
   nav li {
