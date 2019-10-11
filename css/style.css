@@ -13,6 +13,24 @@ header {
   width:100%;
 }
 
+p {
+  width:60%;
+  margin:auto;
+  background-color: #f0f0f0;
+  padding:10px;
+}
+
+.grid3 {
+  display:flex;
+  font-size:.9em;
+  justify-content: space-between;
+  margin-bottom:1rem;
+}
+
+.col {
+  flex: 1;
+}
+
 hr {
   border:1px solid #f0f0f0;
   width: 50%;
@@ -134,7 +152,7 @@ nav a:hover {
 
 body {
   font-family:'Be Vietnam', sans-serif;
-  line-height:1.75rem;
+  line-height:2rem;
   font-size:16px;
   color: #151515;
 }
@@ -495,7 +513,7 @@ ul {
 
 .storyboard {
   display:block;
-  width:50%;
+  width:60%;
   margin:auto;
 }
 
@@ -546,7 +564,7 @@ a:hover {
 }
 
 .sketchesimg2 img {
-  width:50%;
+  width:75%;
   margin:auto;
 }
 
@@ -653,7 +671,7 @@ footer {
 
 .researchimages {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin:auto;
   grid-column-gap: 50px;
 }
@@ -786,6 +804,11 @@ b, strong {
   .sketchesimg, .conclusionbox, .maingrid {
     grid-template-columns: 1fr;
     grid-row-gap:5px;
+  }
+
+  p {
+    width:80%;
+    margin:auto;
   }
 
   header {
@@ -1042,10 +1065,18 @@ b, strong {
 }
 
 @media screen and (max-width:525px) {
+  p {
+    width:90%;
+    margin:auto;
+  }
 
   header{
     padding:0px;
     padding:0px 16px 0px 16px;
+  }
+
+  .grid3, .beforeafter {
+    display:block;
   }
 
    .container {
@@ -1178,3 +1209,20 @@ b, strong {
 }
 
 /* end new nav code pt 2*/
+
+@media screen and (max-width:1100px) {
+  .container {
+    margin: 50px 100px 0px 100px;
+  }
+
+  .grid3 {
+    display:block;
+    font-size:1em;
+    text-align:left;
+    background-color: #f0f0f0;
+    width:60%;
+    margin:auto;
+    padding:10px;
+  }
+
+}
