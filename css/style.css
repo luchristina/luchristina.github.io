@@ -1064,10 +1064,35 @@ b, strong {
   }
 }
 
+@media screen and (max-width:1100px) {
+  .container {
+    margin: 50px 100px 0px 100px;
+  }
+
+  .grid3 {
+    display:block;
+    font-size:1em;
+    text-align:left;
+    background-color: #f0f0f0;
+    width:60%;
+    margin:auto;
+    padding:10px;
+  }
+}
+
 @media screen and (max-width:525px) {
   p {
     width:90%;
     margin:auto;
+  }
+
+  .grid3 {
+    width:90%;
+  }
+
+  .name img {
+    width:45px;
+    height:45px;
   }
 
   header{
@@ -1089,7 +1114,11 @@ b, strong {
   }
 
   .profilepic {
-    width:100%;
+    width:90%;
+  }
+
+  .usabilityupdates {
+    display:block;
   }
 
   .intro {
@@ -1209,20 +1238,3 @@ b, strong {
 }
 
 /* end new nav code pt 2*/
-
-@media screen and (max-width:1100px) {
-  .container {
-    margin: 50px 100px 0px 100px;
-  }
-
-  .grid3 {
-    display:block;
-    font-size:1em;
-    text-align:left;
-    background-color: #f0f0f0;
-    width:60%;
-    margin:auto;
-    padding:10px;
-  }
-
-}
