@@ -177,6 +177,7 @@ body {
   line-height:3rem;
   font-size:2.5rem;
   font-weight:600;
+  padding-top:100px;
 }
 .container {
     margin: 50px 200px 0px 200px;
@@ -1240,6 +1241,10 @@ b, strong {
   #aboutme {
     padding-top:75px;
   }
+
+  .intro {
+    padding:0;
+  }
 }
 
 /* new nav code pt 2*/
@@ -1305,6 +1310,10 @@ b, strong {
     display: flex;
     width:50%;
     align-items: center;
+  }
+
+  .intro {
+    padding-top:0;
   }
 }
 
