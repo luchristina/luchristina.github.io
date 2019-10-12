@@ -31,6 +31,10 @@ p {
   flex: 1;
 }
 
+.col2 {
+  flex:1.1;
+}
+
 hr {
   border:1px solid #f0f0f0;
   width: 50%;
@@ -98,6 +102,14 @@ nav a:hover {
 .researchimages li, .researchimages2 li {
   list-style-type: none;
   font-weight:500;
+}
+
+.Archive {
+  padding-top:50px;
+}
+
+#aboutme {
+  padding-top:100px;
 }
 
 .nav-toggle {
@@ -279,7 +291,7 @@ i, em {
 #work {
   display:grid;
   grid-template-columns: 1fr;
-  padding-top:75px;;
+  padding-top:50px;
   margin:auto;
   grid-gap:100px;
   color:#151515;
@@ -302,8 +314,8 @@ i, em {
 #aboutme {
   display:grid;
   grid-template-columns: .75fr 2fr;
-  padding-top:200px;
-  grid-gap:100px;
+  padding-top:100px;
+  grid-gap:50px;
 }
 
 ul {
@@ -413,7 +425,6 @@ ul {
 
 .usabilityupdates span {
   text-align:center;
-  font-weight:500;
   margin-top:25px;
 }
 
@@ -646,10 +657,6 @@ footer {
   text-align:center;
 }
 
-.Cauldron {
-  padding-top:50px;
-}
-
 .Cauldron, .Archive, .Lockful {
   display:grid;
   grid-template-columns: 1.5fr 1fr;
@@ -851,11 +858,6 @@ b, strong {
     border:none;
   }
 
-  .researchimages {
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap:5px;
-  }
-
   .ContactLinks {
     display: flex;
     align-items: flex-end;
@@ -916,10 +918,6 @@ b, strong {
     margin-bottom:10px;
   }
 
-  .Archive, .Cauldron, .Lockful {
-    margin-top:50px;
-  }
-
   .conclusionbox, .maingrid {
     border:0;
   }
@@ -945,13 +943,15 @@ b, strong {
   }
 
   .cap3 {
-    grid-column-start: 1;
-    grid-row-start:4;
+    grid-column-start: 3;
+    grid-row-start:2;
+    margin-bottom:15px;
   }
 
   .cap4 {
     grid-column-start: 2;
-    grid-row-start:4;
+    grid-row-start:2;
+    margin-bottom:15px;
   }
 
   .testingimages {
@@ -1082,12 +1082,12 @@ b, strong {
 
 @media screen and (max-width:525px) {
   p {
-    width:90%;
+    width:100%;
     margin:auto;
   }
 
   .grid3 {
-    width:90%;
+    width:100%;
   }
 
   .name img {
@@ -1105,7 +1105,7 @@ b, strong {
   }
 
    .container {
-     margin:100px 16px 0px 16px;
+     margin:150px 16px 0px 16px;
    }
 
   .iterations {
@@ -1122,7 +1122,8 @@ b, strong {
   }
 
   .intro {
-    font-size:2rem;
+    font-size:1.75rem;
+    line-height:2.5rem;
   }
 
   .usabilityupdates {
@@ -1130,7 +1131,7 @@ b, strong {
   }
 
   h1 {
-    font-size:2em;
+    font-size:2rem;
   }
 
   .ContactLinks {
@@ -1140,6 +1141,68 @@ b, strong {
     width:75%;
     margin:auto;
     margin-top:50px;
+  }
+
+  .researchimages{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr;
+    margin:auto;
+    grid-row-gap: 25px;
+    grid-column-gap:0px;
+  }
+
+  .researchimages2 {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns:1fr;
+    margin:auto;
+    grid-column-gap:0px;
+    grid-row-gap: 25px;
+  }
+
+  .researchimages img{
+    width: 25%;
+    height:auto;
+    margin:auto;
+  }
+
+  .cap1 {
+    margin-bottom:25px;
+  }
+
+  .cap2 {
+    grid-column-start: 1;
+    grid-row-start:4;
+    margin-bottom:25px;
+  }
+
+  .cap3 {
+    grid-column-start: 1;
+    grid-row-start:4;
+    margin-bottom:25px;
+  }
+
+  .cap4 {
+    grid-column-start: 1;
+    grid-row-start:6;
+    margin-bottom:25px;
+  }
+
+  .cap1, .cap3, .cap4 {
+    margin-top:0px;
+  }
+
+  .caption.tacky {
+    font-size:1.15rem;
+  }
+
+  .caption.smallfont {
+    font-size:1.15rem;
+  }
+
+  .caption.smallphoto {
+    font-size:1.15rem;
   }
 
   .iteration1 {
@@ -1168,6 +1231,14 @@ b, strong {
   .testingimages {
     margin:0px 5px 0px 5px;
     width:100%;
+  }
+
+  .Archive {
+    padding-top:25px;
+  }
+
+  #aboutme {
+    padding-top:75px;
   }
 }
 
