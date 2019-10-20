@@ -27,6 +27,34 @@ p {
   margin-bottom:1rem;
 }
 
+.hero {
+  width:100vw;
+  height:100%;
+  background-color:#fff;
+  position:relative;
+  left:50%;
+  right:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+}
+
+.bg1 {
+  background-image:url('../images/archivebg.png');
+  background-repeat:repeat;
+  background-position: center;
+  background-size:contain;
+  padding:50px 0px 50px 0px;
+}
+
+.bg2 {
+  background-image:url('../images/cauldronbg.png');
+  background-repeat:repeat;
+  background-position: center;
+  background-size:contain;
+  padding-bottom:25px;
+  padding:50px 0px 50px 0px;
+}
+
 .col {
   flex: 1;
 }
@@ -177,10 +205,11 @@ body {
   line-height:3rem;
   font-size:2.5rem;
   font-weight:600;
-  padding-top:100px;
 }
+
 .container {
     margin: 50px 200px 0px 200px;
+    background-color:#fff;
 }
 
 .overall {
@@ -585,7 +614,7 @@ a:hover {
 }
 
 .hero img {
-  width: 75%!important;
+  width: 50%!important;
 }
 
 .thename {
@@ -637,7 +666,6 @@ footer {
 }
 
 .btnpartial {
-  margin-top:25px!important;
   margin:auto;
   font-weight:500;
   font-size:1.25em;
@@ -924,7 +952,7 @@ b, strong {
   }
 
   .hero img {
-    width:100%!important;
+    width:75%!important;
   }
 
   .projectinfo, .researchmethod {
@@ -1065,6 +1093,12 @@ b, strong {
   }
 }
 
+@media screen and (max-width:768px) {
+  .intro {
+    font-size:1.75rem;
+  }
+}
+
 @media screen and (max-width:1100px) {
   .container {
     margin: 50px 100px 0px 100px;
@@ -1078,6 +1112,11 @@ b, strong {
     width:60%;
     margin:auto;
     padding:10px;
+  }
+
+  .intro {
+    padding:0;
+    padding:100px 0px 100px 0px;
   }
 }
 
@@ -1241,17 +1280,23 @@ b, strong {
   #aboutme {
     padding-top:75px;
   }
-
-  .intro {
-    padding:0;
-  }
 }
 
 /* new nav code pt 2*/
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:769px) {
   .nav-toggle-label {
     display:none;
+  }
+
+  .grid3 {
+    display:block;
+    font-size:1em;
+    text-align:left;
+    background-color: #f0f0f0;
+    width:60%;
+    margin:auto;
+    padding:10px;
   }
 
   .caption {
@@ -1313,8 +1358,26 @@ b, strong {
   }
 
   .intro {
-    padding-top:0;
+    margin-top:15%;
+    }
   }
-}
+
+  @media screen and (max-width:768px) {
+    .intro {
+      padding:150px 0px 50px 0px;
+    }
+  }
+
+  @media screen and (max-width:525px) {
+    .intro {
+      padding:75px 0px 75px 0px;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    .intro {
+      padding:50px 0px 50px 0px;
+    }
+  }
 
 /* end new nav code pt 2*/
