@@ -42,7 +42,7 @@ p {
   background-image:url('../images/archivebg.png');
   background-repeat:repeat;
   background-position: center;
-  background-size:contain;
+  background-size:auto;
   padding:50px 0px 50px 0px;
 }
 
@@ -50,7 +50,7 @@ p {
   background-image:url('../images/cauldronbg.png');
   background-repeat:repeat;
   background-position: center;
-  background-size:contain;
+  background-size:cover;
   padding-bottom:25px;
   padding:50px 0px 50px 0px;
 }
