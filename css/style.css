@@ -138,7 +138,7 @@ nav a:hover {
 }
 
 #aboutme {
-  padding-top:100px;
+  padding-top:150px;
 }
 
 .nav-toggle {
@@ -322,7 +322,7 @@ i, em {
 #work {
   display:grid;
   grid-template-columns: 1fr;
-  padding-top:50px;
+  padding-top:100px;
   margin:auto;
   grid-gap:100px;
   color:#151515;
@@ -345,7 +345,6 @@ i, em {
 #aboutme {
   display:grid;
   grid-template-columns: .75fr 2fr;
-  padding-top:100px;
   grid-gap:50px;
 }
 
@@ -402,7 +401,7 @@ ul {
 }
 
 .thename h1 {
-  margin:25px 0px 25px 0px;
+  margin:50px 0px 25px 0px;
 }
 
 .thename2 h1 {
@@ -1121,7 +1120,7 @@ b, strong {
 
   .intro {
     padding:0;
-    padding:100px 0px 100px 0px;
+    padding:150px 0px 100px 0px;
   }
 }
 
@@ -1299,7 +1298,7 @@ b, strong {
 
     @media screen and (min-width:1200px) {
       .intro {
-        padding:75px 0px 75px 0px;
+        padding:100px 0px 100px 0px;
         margin-top:50px;
       }
 
@@ -1404,8 +1403,8 @@ b, strong {
     }
 
     .intro {
-      margin-top:15%;
-      padding:100px 0px 100px 0px;
+      margin-top:10%;
+      padding:0px 0px 0px 0px;
       }
     }
 
