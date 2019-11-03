@@ -7,13 +7,13 @@ header {
   background: #fff;
   text-align:center;
   position:fixed;
-  padding:0px 100px 0px 100px;
+  padding:0px 150px 0px 150px;
   top:0;
   z-index:999;
   width:100%;
 }
 
-p {
+p, .comments {
   width:60%;
   margin:auto;
   background-color: #f0f0f0;
@@ -50,7 +50,7 @@ p {
   background-image:url('../images/cauldronbg.png');
   background-repeat:repeat;
   background-position: center;
-  background-size:cover;
+  background-size:auto;
   padding-bottom:25px;
   padding:50px 0px 50px 0px;
 }
@@ -107,11 +107,12 @@ nav a {
 }
 
 nav a:visited, nav a:active {
-  color: #D1D5EE;
+  color: #151515;
 }
 
 nav a:hover {
-  color: #5367CE;
+  color: #1F57E8;
+  border:0;
 }
 
 .nav-toggle:checked ~ nav {
@@ -198,19 +199,17 @@ body {
 }
 
 ::selection {
-  background: #D1D5EE85;
+  background: #D2DDFA85;
 }
 
 .intro {
   line-height:3rem;
   font-size:2.5rem;
   font-weight:600;
-  border-top:15px solid #D1D5EE85;
-  border-bottom: 15px solid #D1D5EE;
 }
 
 .container {
-    margin: 50px 200px 0px 200px;
+    margin: 50px 150px 0px 150px;
     background-color:#fff;
 }
 
@@ -220,7 +219,7 @@ body {
 }
 
 .intro b {
-  color: #172EA8;
+  color: #1F57E8;
 }
 
 h1 {
@@ -236,7 +235,7 @@ h2 {
   font-size: 1.5rem;
   letter-spacing:1px;
   margin-bottom:15px;
-  color: #172EA8;
+  color: #1F57E8;
 }
 
 .hero h1 {
@@ -280,7 +279,7 @@ h2 {
   text-align:center;
   font-weight:500;
   padding:5px 0px 5px 0px;
-  border-bottom:1px solid #D1D5EE;
+  border-bottom:1px solid #D2DDFA;
 }
 
 .actionemail {
@@ -288,7 +287,7 @@ h2 {
 }
 
 .actionemail {
-  border-bottom:1px solid #172EA8;
+  border-bottom:1px solid #D2DDFA;
 }
 
 i, em {
@@ -385,7 +384,7 @@ ul {
 
 #contact {
   margin-top:100px;
-  background-color: #172EA820;
+  background-color: #D2DDFA;
   padding:100px 0px 100px 0px;
   text-align:center;
 }
@@ -536,8 +535,8 @@ ul {
   font-size:1.5rem;
   line-height:1.75em;
   font-weight:500;
-  color: #5367CE;
-  background-color: #172EA820;
+  color: #1F57E8;
+  background-color: #D2DDFA;
   border-radius:20px;
   margin:25px 0px 25px 0px;
   padding:5px 5px 10px 5px;
@@ -562,11 +561,11 @@ ul {
 
 a {
   text-decoration:none;
-  color: #5367CE;
+  color: #1F57E8;
 }
 
 a:hover {
-  color: #172EA8;
+  color: #0D2D7F;
 }
 
 .researchimages img{
@@ -582,7 +581,8 @@ a:hover {
 }
 
 .proto{
-  background-color: #D1D5EE;
+  background-color: #1F57E8;
+  color: #D2DDFA;
   padding:10px 30px 15px 30px;
   border-radius: 30px;
 }
@@ -642,8 +642,7 @@ a:hover {
 }
 
 .averagecook {
-  border-right:1px solid #f0f0f0;
-  padding-right:50px;
+  border-right:0px solid #f0f0f0;
 }
 
 footer {
@@ -655,7 +654,7 @@ footer {
   text-transform: ;
   width:100%;
   padding:2px 0px 2px 0px;
-  background-color: #D1D5EE;
+  background-color: #D2DDFA;
 }
 
 .btn {
@@ -675,8 +674,7 @@ footer {
 }
 
 .name{
-  margin-top:20px;
-  height:100%;
+  margin:20px 0px 20px 0px;
 }
 
 .name img {
@@ -816,7 +814,7 @@ footer {
 
 u {
   text-decoration:none;
-  border-bottom:1px solid #D1D5EE;
+  border-bottom:1px solid #D2DDFA;
   color:#000;
   font-weight:500;
 }
@@ -831,7 +829,7 @@ u {
 }
 
 .logos, .colors {
-  border-right:1px solid #f0f0f0;
+  border-right:0px solid #f0f0f0;
 }
 
 b, strong {
@@ -844,7 +842,7 @@ b, strong {
     grid-row-gap:5px;
   }
 
-  p {
+  p, .comments {
     width:80%;
     margin:auto;
   }
@@ -1099,11 +1097,12 @@ b, strong {
   .intro {
     font-size:1.75rem;
   }
+
 }
 
 @media screen and (max-width:1100px) {
   .container {
-    margin: 50px 100px 0px 100px;
+    margin: 50px 150px 0px 150px;
   }
 
   .grid3 {
@@ -1123,7 +1122,7 @@ b, strong {
 }
 
 @media screen and (max-width:525px) {
-  p {
+  p, .comments {
     width:100%;
     margin:auto;
   }
@@ -1339,7 +1338,7 @@ b, strong {
     content: '';
     display:block;
     height: 5px;
-    background: #D1D5EE;
+    background: #D2DDFA;
     position: absolute;
     bottom: -.5em;
     left:0;
@@ -1365,34 +1364,40 @@ b, strong {
     }
   }
 
+
+    @media screen and (max-width:525px) {
+      .intro {
+        padding:50px 0px 50px 0px;
+      }
+    }
+
+    @media screen and (min-width:1200px) {
+      .intro {
+        padding:75px 0px 75px 0px;
+        margin-top:50px;
+      }
+
+      .container {
+        margin:auto;
+        margin:0px 150px 0px 150px;
+      }
+
+      .hero img{
+        max-width: 800px;
+      }
+    }
+
+
   @media screen and (max-width:768px) {
     .intro {
       margin-top:150px;
       padding:100px 0px 100px 0px;
     }
-  }
-
-  @media screen and (max-width:525px) {
-    .intro {
-      padding:50px 0px 50px 0px;
-    }
-  }
-
-  @media screen and (min-width:1200px) {
-    .intro {
-      padding:75px 0px 75px 0px;
-      margin-top:50px;
-    }
 
     .container {
-      width:1000px;
-      max-width:1000px;
-      margin:auto;
-    }
-
-    .hero img{
-      max-width: 800px;
+      margin:0px 25px 0px 25px;
     }
   }
+
 
 /* end new nav code pt 2*/
