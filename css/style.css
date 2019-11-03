@@ -842,6 +842,10 @@ b, strong {
     grid-row-gap:5px;
   }
 
+  .grid3 {
+    width:60%;
+  }
+
   p, .comments {
     width:80%;
     margin:auto;
@@ -1285,84 +1289,6 @@ b, strong {
 
 /* new nav code pt 2*/
 
-@media screen and (min-width:769px) {
-  .nav-toggle-label {
-    display:none;
-  }
-
-  .grid3 {
-    display:block;
-    font-size:1em;
-    text-align:left;
-    background-color: #f0f0f0;
-    width:60%;
-    margin:auto;
-    padding:10px;
-  }
-
-  .caption {
-    margin-top:50px;
-  }
-
-  header {
-    text-align:left;
-    margin:0;
-    display: grid;
-    position:sticky;
-  }
-
-  nav {
-    all: unset;
-    grid-column:3 / 7;
-    display:flex;
-    justify-content: flex-end;
-    align-items:center;
-  }
-
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-    margin-top:20px;
-  }
-
-  nav li {
-    margin-left: 3em;
-  }
-
-  nav a {
-    opacity: 1;
-    position:relative;
-  }
-
-  nav a::before {
-    content: '';
-    display:block;
-    height: 5px;
-    background: #D2DDFA;
-    position: absolute;
-    bottom: -.5em;
-    left:0;
-    right:0;
-    transform: scale(0, 1);
-    transform-origin:left;
-    transition: transform ease-in-out 250ms;
-  }
-
-  nav a:hover::before {
-    transform: scale(1,1);
-  }
-
-  .logoimages img {
-    display: flex;
-    width:50%;
-    align-items: center;
-  }
-
-  .intro {
-    margin-top:15%;
-    padding:100px 0px 100px 0px;
-    }
-  }
 
 
     @media screen and (max-width:525px) {
@@ -1399,5 +1325,88 @@ b, strong {
     }
   }
 
+  @media screen and (max-width:768px) {
+    .grid3 {
+      width:80%;
+    }
+  }
+  @media screen and (min-width:769px) {
+    .nav-toggle-label {
+      display:none;
+    }
+
+    .grid3 {
+      display:block;
+      font-size:1em;
+      text-align:left;
+      background-color: #f0f0f0;
+      width:80%;
+      margin:auto;
+      padding:10px;
+    }
+
+    .caption {
+      margin-top:50px;
+    }
+
+    header {
+      text-align:left;
+      margin:0;
+      display: grid;
+      position:sticky;
+    }
+
+    nav {
+      all: unset;
+      grid-column:3 / 7;
+      display:flex;
+      justify-content: flex-end;
+      align-items:center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      margin-top:20px;
+    }
+
+    nav li {
+      margin-left: 3em;
+    }
+
+    nav a {
+      opacity: 1;
+      position:relative;
+    }
+
+    nav a::before {
+      content: '';
+      display:block;
+      height: 5px;
+      background: #D2DDFA;
+      position: absolute;
+      bottom: -.5em;
+      left:0;
+      right:0;
+      transform: scale(0, 1);
+      transform-origin:left;
+      transition: transform ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+      transform: scale(1,1);
+    }
+
+    .logoimages img {
+      display: flex;
+      width:50%;
+      align-items: center;
+    }
+
+    .intro {
+      margin-top:15%;
+      padding:100px 0px 100px 0px;
+      }
+    }
 
 /* end new nav code pt 2*/
