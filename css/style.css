@@ -496,6 +496,7 @@ ul {
 
 .cap1, .cap2, .cap3, .cap4 {
   margin-top:15px;
+  text-align:left;
 }
 
 .iterations {
