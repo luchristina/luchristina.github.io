@@ -1282,7 +1282,7 @@ b, strong {
     padding-top:25px;
   }
 
-  #aboutme {
+  #aboutme, #work {
     padding-top:75px;
   }
 }
@@ -1290,12 +1290,6 @@ b, strong {
 /* new nav code pt 2*/
 
 
-
-    @media screen and (max-width:525px) {
-      .intro {
-        padding:50px 0px 50px 0px;
-      }
-    }
 
     @media screen and (min-width:1200px) {
       .intro {
@@ -1317,7 +1311,11 @@ b, strong {
   @media screen and (max-width:768px) {
     .intro {
       margin-top:150px;
-      padding:100px 0px 100px 0px;
+      padding:100px 0px 0px 0px;
+    }
+
+    #aboutme {
+      padding:150px 0px 0px 0px;
     }
 
     .container {
@@ -1408,5 +1406,6 @@ b, strong {
       padding:0px 0px 0px 0px;
       }
     }
+
 
 /* end new nav code pt 2*/
