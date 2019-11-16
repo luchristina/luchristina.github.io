@@ -27,6 +27,10 @@ p, .comments {
   margin-bottom:1rem;
 }
 
+.khironcontain {
+  margin-top:100px;
+}
+
 .hero {
   width:100vw;
   height:100%;
@@ -133,7 +137,7 @@ nav a:hover {
   font-weight:500;
 }
 
-.Cauldron {
+.Cauldron, .Khiron {
   padding-top:50px;
 }
 
@@ -315,7 +319,7 @@ i, em {
   margin:0;
 }
 
-.Cauldron h1, .Archive h1, #aboutme h1 {
+.Cauldron h1, .Archive h1, #aboutme h1, .Khiron h1 {
   color: #151515;
 }
 
@@ -328,7 +332,7 @@ i, em {
   color:#151515;
 }
 
-.Cauldron img, .Archive img {
+.Cauldron img, .Archive img , .Khiron img {
   margin:auto!important;
 }
 
@@ -686,13 +690,13 @@ footer {
   text-align:center;
 }
 
-.Cauldron, .Archive, .Lockful {
+.Cauldron, .Archive, .Khiron {
   display:grid;
   grid-template-columns: 1.5fr 1fr;
   grid-column-gap:50px;
 }
 
-.cauldronsum h1, .archivesum h1, .bio h1{
+.cauldronsum h1, .archivesum h1, .bio h1, .khironsum{
   padding-bottom:15px;
 }
 
@@ -930,7 +934,7 @@ b, strong {
     width:100%;
   }
 
-  .Cauldron img, .Archive img, .Lockful img {
+  .Cauldron img, .Archive img, .Khiron img {
     width:100%!important;
   }
 
@@ -1038,7 +1042,7 @@ b, strong {
     margin-top:50px;
   }
 
-  #aboutme, .swot, .personatype, .Cauldron, .Archive, .Lockful {
+  #aboutme, .swot, .personatype, .Cauldron, .Archive, .Khiron {
     grid-template-columns: 1fr;
   }
 
