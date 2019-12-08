@@ -16,7 +16,7 @@ header {
 p, .comments {
   width:60%;
   margin:auto;
-  background-color: #f0f0f0;
+  border-left: 5px solid #1F57E825;
   padding:10px;
 }
 
@@ -42,6 +42,7 @@ p, .comments {
   margin-right:-50vw;
 }
 
+/*
 .bg1 {
   background-image:url('../images/archivebg.png');
   background-repeat:repeat;
@@ -57,7 +58,7 @@ p, .comments {
   background-size:auto;
   padding-bottom:25px;
   padding:50px 0px 50px 0px;
-}
+} */
 
 .col {
   flex: 1;
@@ -84,6 +85,7 @@ nav {
   background: #fff;
   z-index:2000;
   width:100%;
+  text-transform:uppercase;
   transform: scale(1,0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
@@ -103,9 +105,9 @@ nav li {
 nav a {
   color: #151515;
   text-decoration: none;
-  font-size: 1.25rem;
-  text-transform:;
-  font-weight:500;
+  font-size: 1.15rem;
+  text-transform:uppercase;
+  font-weight:700;
   opacity:0;
   transition: opacity 150ms ease-in-out;
 }
@@ -196,9 +198,9 @@ nav a:hover {
 /* new nav ends here */
 
 body {
-  font-family:'Be Vietnam', sans-serif;
-  line-height:2rem;
-  font-size:16px;
+  font-family:'Lato', sans-serif;
+  line-height:1.5em;
+  font-size:15px;
   color: #151515;
 }
 
@@ -208,8 +210,9 @@ body {
 
 .intro {
   line-height:3rem;
+  text-transform:inherit;
   font-size:2.5rem;
-  font-weight:600;
+  font-weight:700;
 }
 
 .container {
@@ -227,19 +230,20 @@ body {
 }
 
 h1 {
-  font-weight:600;
-  font-size:2rem;
-  font-family: 'Be Vietnam';
+  font-weight:700;
+  font-size:1.5rem;
+  font-family: 'Lato';
   margin-bottom:2rem;
   color: #151515;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 1.5rem;
-  letter-spacing:1px;
+  font-weight: 700;
+  font-size: 1.25rem;
   margin-bottom:15px;
   color: #1F57E8;
+  text-transform:uppercase;
 }
 
 .hero h1 {
@@ -252,14 +256,30 @@ h2 {
   margin-top:100px;
 }
 
-.lockfulcolors {
-  margin:50px 0px 0px 0px;
+button a {
+  margin-top:25px;
+  display:block;
+  border: 2px solid #1F57E850;
+  padding:1em 3em 1em 3em;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size:.9rem;
+  font-weight:600;
+}
+
+button a:hover {
+  background-color: #1F57E815;
+  border-color: #1F57E8;
+  transition: background-color 0.1s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
 }
 
 .ContactLinks {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  text-transform:uppercase;
+  letter-spacing:.5px;
   width:30%;
   margin:auto;
   margin-top:50px;
@@ -315,10 +335,6 @@ i, em {
   background-color: #42BB09;
 }
 
-#aboutme h1 {
-  margin:0;
-}
-
 .Cauldron h1, .Archive h1, #aboutme h1, .Khiron h1 {
   color: #151515;
 }
@@ -348,7 +364,7 @@ i, em {
 
 #aboutme {
   display:grid;
-  grid-template-columns: .75fr 2fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap:50px;
 }
 
@@ -391,10 +407,6 @@ ul {
   padding:100px 0px 100px 0px;
   text-align:center;
 }
-
- .LinkedIn, .Email, .Twitter {
-   font-size:16px;
- }
 
 .name {
   font-size:2.5rem;
@@ -464,8 +476,9 @@ ul {
 
 .nextproject {
   text-align:center;
-  font-size:2rem;
-  font-weight:500;
+  text-transform:uppercase;
+  font-size:1.5rem;
+  font-weight:700;
 }
 
 .testingimages {
@@ -543,7 +556,7 @@ ul {
   background-color: #D2DDFA;
   border-radius:20px;
   margin:25px 0px 25px 0px;
-  padding:5px 5px 10px 5px;
+  padding:10px 5px 10px 5px;
 }
 
 .visuals, .visuals2 {
@@ -626,7 +639,6 @@ a:hover {
 .thename {
   margin:auto;
   font-weight:500;
-  text-transform: ;
   margin-bottom:50px;
 }
 
@@ -653,9 +665,10 @@ footer {
   text-align:center;
   font-size:.75em;
   position: fixed;
+  letter-spacing:.5px;
   bottom:0;
   left:0;
-  text-transform: ;
+  text-transform:uppercase;
   width:100%;
   padding:2px 0px 2px 0px;
   background-color: #D2DDFA;
@@ -682,8 +695,8 @@ footer {
 }
 
 .name img {
-  height:5rem;
-  width:5rem;
+  height:3rem;
+  width:3rem;
 }
 
 .nameheader {
@@ -697,7 +710,7 @@ footer {
 }
 
 .cauldronsum h1, .archivesum h1, .bio h1, .khironsum{
-  padding-bottom:15px;
+  padding-bottom:0px;
 }
 
 .researchimages, .researchimages2 {
