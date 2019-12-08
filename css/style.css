@@ -275,12 +275,8 @@ button a:hover {
 }
 
 .ContactLinks {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
   text-transform:uppercase;
   letter-spacing:.5px;
-  width:30%;
   margin:auto;
   margin-top:50px;
 }
@@ -872,6 +868,11 @@ b, strong {
     margin:0;
   }
 
+  .container button {
+    display:flex;
+    margin:auto;
+  }
+
   .storyboard {
     width:100%;
   }
@@ -909,9 +910,6 @@ b, strong {
   }
 
   .ContactLinks {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     width:50%;
     margin:auto;
     margin-top:50px;
@@ -1148,6 +1146,10 @@ b, strong {
     margin:auto;
   }
 
+  .ContactLinks {
+    display:block;
+  }
+
   .grid3 {
     width:100%;
   }
@@ -1197,12 +1199,10 @@ b, strong {
   }
 
   .ContactLinks {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     width:75%;
     margin:auto;
     margin-top:50px;
+    display:inline-grid;
   }
 
   .researchimages{
@@ -1423,6 +1423,12 @@ b, strong {
       padding:0px 0px 0px 0px;
       }
     }
+
+  @media screen and (max-width:760px) {
+    .ContactLinks {
+      width:90%;
+    }
+
 
 
 /* end new nav code pt 2*/
