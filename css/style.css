@@ -1429,6 +1429,7 @@ b, strong {
       width:90%;
     }
 
-
-
-/* end new nav code pt 2*/
+    h1 {
+      font-size:1.5rem;
+    }
+  }
