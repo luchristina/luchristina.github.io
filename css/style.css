@@ -734,6 +734,7 @@ footer {
 
 .center {
   text-align:center;
+  font-weight:normal;
 }
 
 .researchimages2 img {
@@ -1431,5 +1432,9 @@ b, strong {
 
     h1 {
       font-size:1.5rem;
+    }
+
+    .container {
+      margin-top:15vh;
     }
   }
